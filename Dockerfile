@@ -1,3 +1,6 @@
+# Set ServerName globally to avoid the warning
+RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+
 # Use the official PHP image with Apache as the base image
 FROM php:7.4-apache
 
